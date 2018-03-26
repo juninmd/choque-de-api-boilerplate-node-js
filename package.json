@@ -1,7 +1,7 @@
 {
-  "name": "joselito-boiporlate-node-js",
-  "version": "1.0.0",
-  "description": "Boiporlate completo para iniciar seu projeto em Node JS",
+  "name": "choque-de-api-boilerplate-node-js",
+  "version": "0.0.1",
+  "description": "Boilerplate completo para iniciar seu projeto em Node JS",
   "main": "app.js",
   "license": "MIT",
   "dependencies": {
