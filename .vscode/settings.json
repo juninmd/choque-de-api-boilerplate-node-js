@@ -9,6 +9,11 @@
         "node_modules": true,
         "yarn-lock.json": true,
         "package-lock.json": true,
-        ".vscode": true
+        ".vscode": true,
+        ".eslintrc" : true,
+        ".editorconfig": true,
+        ".gitignore" : true,
+        "tsconfig.json" : true,
+        "tslint.json" : true
     }
 }

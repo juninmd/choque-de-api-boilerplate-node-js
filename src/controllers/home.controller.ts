@@ -1,9 +1,22 @@
-import { Router, Request, Response } from 'express';
+import { JsonController, Controller, Param, Body, Get, Post, Put, Delete, Authorized } from "routing-controllers";
+import { UserModel } from "../models/User.model";
 
-const router: Router = Router();
+@JsonController("/home")
+export class HomeController {
 
-router.get('/', (req: Request, res: Response) => {
-    res.send('Home Controller');
-});
+    @Get("/users")
+    getAll() {
+        return [{ user: 'antonio' }, { user: 'carlos' }];
+    }
 
-export const HomeController: Router = router;
+    @Get("/users/:id")
+    getOne(@Param("id") id: number) {
+        return { user: id };
+    }
+
+    @Authorized('batata')
+    @Post("/users")
+    post(@Body({ validate: true }) user: UserModel) {
+        return {};
+    }
+}
