@@ -6,7 +6,7 @@
         {
             "label": "build",
             "type": "npm",
-            "script": "build"
+            "script": "tsc"
         }
     ]
 }

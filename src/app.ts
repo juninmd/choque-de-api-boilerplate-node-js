@@ -10,31 +10,10 @@ const app = express({
     },
     routePrefix: "/api",
     cors: true,
-    controllers: [__dirname + "/controllers/*.js"]
+    controllers: [__dirname + "/controllers/*.js"],
+    middlewares: [__dirname + "/middlewares/**/*.js"],
+    defaultErrorHandler: true,
 });
-
-app.use(require('express-status-monitor')({
-    title: 'Express Status',
-    path: '/status',
-    spans: [{
-        interval: 1,
-        retention: 60
-    }, {
-        interval: 5,
-        retention: 60
-    }, {
-        interval: 15,
-        retention: 60
-    }],
-    chartVisibility: {
-        cpu: true,
-        mem: true,
-        load: true,
-        responseTime: true,
-        rps: true,
-        statusCodes: true
-    }
-}));
 
 console.info(`[API] Rodando! http://localhost:${port}/api`)
 app.listen(port);

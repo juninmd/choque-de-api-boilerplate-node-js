@@ -6,8 +6,16 @@ export class HomeController {
 
     @Get("/users")
     getAll() {
-        return [{ user: 'antonio' }, { user: 'carlos' }];
+        return [{ user: 'antonio' }, { user: 'carlos' }, { user: 'junior' }];
     }
+
+    @Get("/erros/:id")
+    getErrors(@Param("id") id: number) {
+        if (id > 1)
+            throw 'erro teste'
+        return [{ user: 'antonio' }, { user: 'carlos' }, { user: 'junior' }];
+    }
+
 
     @Get("/users/:id")
     getOne(@Param("id") id: number) {

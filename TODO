@@ -1,9 +1,11 @@
+[x] Nodemon
+[x] dot-env
+[x] TS Linter
+[x] Sentry.io
+[x] Middlewares pattern
 [] JEST
-[] Sentry.io
 [] Burzum
 [] Sequelize
 [] Auth
 [] Swagger
-[] TS Linter
 [] Husky 
-[] Nodemon
