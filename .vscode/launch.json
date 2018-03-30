@@ -9,10 +9,14 @@
       "request": "launch",
       "name": "Launch Program",
       "program": "${workspaceFolder}\\dist\\app.js",
-      "preLaunchTask": "build",
+      "preLaunchTask": "tsc",
       "outFiles": [
-        "${workspaceFolder}/dist/**/*.js"
-      ]
+        "${workspaceFolder}\\dist\\**\\*.js",
+        "${workspaceFolder}\\dist\\**\\**\\*.js"
+      ],
+      "env": {
+        "NODE_ENV": "development"
+      }
     }
   ]
 }

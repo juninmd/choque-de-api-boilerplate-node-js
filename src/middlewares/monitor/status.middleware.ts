@@ -1,7 +1,7 @@
 import * as status from 'express-status-monitor';
-import { Middleware, ExpressMiddlewareInterface } from "routing-controllers";
+import { Middleware, ExpressMiddlewareInterface } from 'routing-controllers';
 
-@Middleware({ type: "after" })
+@Middleware({ type: 'after' })
 export class SentryErrorMiddleware implements ExpressMiddlewareInterface {
 
     use = status({

@@ -23,6 +23,12 @@
     "@types/express" "*"
     "@types/node" "*"
 
+"@types/dotenv@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@types/dotenv/-/dotenv-4.0.2.tgz#f2983f0afe9fd7f6eb8aef515a4d77f4cbaa0597"
+  dependencies:
+    "@types/node" "*"
+
 "@types/events@*":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-1.2.0.tgz#81a6731ce4df43619e5c8c945383b3e62a89ea86"
@@ -1046,15 +1052,15 @@ domexception@^1.0.0:
   dependencies:
     webidl-conversions "^4.0.2"
 
-dot-env@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/dot-env/-/dot-env-0.0.1.tgz#e4434cb8c69143e445bc28a729437e4fabd88c80"
-
 dot-prop@^4.1.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-4.2.0.tgz#1f19e0c2e1aa0e32797c49799f2837ac6af69c57"
   dependencies:
     is-obj "^1.0.0"
+
+dotenv@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-5.0.1.tgz#a5317459bd3d79ab88cff6e44057a6a3fbb1fcef"
 
 duplexer3@^0.1.4:
   version "0.1.4"
