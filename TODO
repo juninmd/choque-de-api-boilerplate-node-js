@@ -3,9 +3,10 @@
 [x] TS Linter
 [x] Sentry.io
 [x] Middlewares pattern
+[x] Helmet
 [] JEST
+[] Swagger
 [] Burzum
 [] Sequelize
 [] Auth
-[] Swagger
 [] Husky 
