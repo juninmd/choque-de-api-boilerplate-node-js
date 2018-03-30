@@ -6,6 +6,5 @@ Raven.config(SENTRY_TOKEN).install();
 
 @Middleware({ type: 'after' })
 export class SentryErrorMiddleware implements ExpressErrorMiddlewareInterface {
-
     error = Raven.errorHandler()
 }

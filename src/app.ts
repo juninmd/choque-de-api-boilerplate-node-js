@@ -1,6 +1,5 @@
 import 'reflect-metadata';
-import * as dotenv from 'dotenv';
-dotenv.config({ path: `.env-${process.env.NODE_ENV || 'development'}` })
+import './core/env.core';
 import { PORT, ENV } from './settings.env';
 import { createExpressServer as express, Action } from 'routing-controllers';
 
@@ -16,5 +15,5 @@ const app = express({
     defaultErrorHandler: true,
 });
 
-console.info(`[API] Rodando! http://localhost:${PORT}/api | Ambiente: ${ENV}`)
+console.info(`[API] Running! http://localhost:${PORT}/api | Environment: ${ENV}`)
 app.listen(PORT);
