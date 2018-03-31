@@ -6,7 +6,7 @@ import _settings from './settings.env';
 
 const app: Application = express({
     cors: true,
-    classTransformer: true,
+    classTransformer: false,
     routePrefix: _settings.api.prefix,
     defaultErrorHandler: false,
     controllers: _settings.api.dirs.controllers,

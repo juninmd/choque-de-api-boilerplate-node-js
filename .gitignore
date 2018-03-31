@@ -97,3 +97,4 @@ $RECYCLE.BIN/
 dist
 
 env/.*
+package-lock.json

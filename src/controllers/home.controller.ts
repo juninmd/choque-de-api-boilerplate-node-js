@@ -1,5 +1,6 @@
 import { JsonController, Controller, Param, Body, Get, Post, Put, Delete, Authorized } from 'routing-controllers';
-import { UserModel } from '../models/User.model';
+import UserModel from '../models/User.model';
+import UserRepository from '../repositories/user.repository';
 
 @JsonController('/home')
 export class HomeController {
@@ -19,12 +20,12 @@ export class HomeController {
 
     @Get('/users/:id')
     getOne(@Param('id') id: number) {
-        return { user: id };
+        return new UserRepository().get();
     }
 
-    @Authorized('batata')
     @Post('/users')
-    post(@Body({ validate: true }) user: UserModel) {
-        return {};
+    async post() {
+        let insert = await new UserRepository().insert();
+        return insert;
     }
 }

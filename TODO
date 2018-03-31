@@ -5,6 +5,6 @@
 [x] Middlewares pattern
 [x] Helmet
 [x] JEST
-[] Sequelize
+[x] Sequelize
 [] Swagger
 [] Husky 
