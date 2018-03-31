@@ -4,9 +4,7 @@
 [x] Sentry.io
 [x] Middlewares pattern
 [x] Helmet
-[] JEST
-[] Swagger
-[] Burzum
+[x] JEST
 [] Sequelize
-[] Auth
+[] Swagger
 [] Husky 

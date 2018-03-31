@@ -3,7 +3,7 @@ import * as path from 'path';
 export default {
     api: {
         port: (Number(process.env.PORT || '3000')),
-        env: (process.env.NODE_ENV || ''),
+        env: (process.env.NODE_ENV || 'development'),
         prefix: '/api',
         dirs: {
             controllers: [path.join(__dirname, 'controllers/*.controller{.js,.ts}')],
