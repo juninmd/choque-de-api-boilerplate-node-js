@@ -25,6 +25,8 @@
 ## Dedicação
 * Especialmente aos amantes da sétima arte do desenvolvimento de software  
 
+Em breve a documentação verdadeira e todo código fonte....
+
 ## Configurações prontas
 * Visual Studio Code
 
@@ -33,4 +35,13 @@
 * Vai baixar todas a dependências do projeto.
 * Depois é só dar F5 no Visual Studio Code.
   
-Em breve a documentação verdadeira e todo código fonte....
+## NPM Tasks
+* tsc:clean   
+`Remove a pasta dist gerada pelo Typescript`
+
+* tsc  
+`Efetua o build do typescript`
+
+
+## Status
+`http://localhost:4500/status`

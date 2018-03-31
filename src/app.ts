@@ -1,19 +1,21 @@
 import 'reflect-metadata';
 import './core/env.core';
-import { PORT, ENV } from './settings.env';
+import { Application } from 'express';
 import { createExpressServer as express, Action } from 'routing-controllers';
+import _settings from './settings.env';
 
-const app = express({
-    authorizationChecker: async (action: Action, roles: string[]) => {
-        const token = action.request.headers['authorization'];
-        return true;
-    },
-    routePrefix: '/api',
+const app: Application = express({
     cors: true,
-    controllers: [`${__dirname}/controllers/*.js`],
-    middlewares: [`${__dirname}/middlewares/**/*.js`],
-    defaultErrorHandler: true,
+    classTransformer: true,
+    routePrefix: _settings.api.prefix,
+    defaultErrorHandler: false,
+    controllers: _settings.api.dirs.controllers,
+    middlewares: _settings.api.dirs.middlewares,
 });
 
-console.info(`[API] Running! http://localhost:${PORT}/api | Environment: ${ENV}`)
-app.listen(PORT);
+if (_settings.api.env != 'test') {
+    console.info(`[API] Running! http://localhost:${_settings.api.port}/api | Environment: ${_settings.api.env}`)
+    app.listen(_settings.api.port);
+}
+
+export default app;

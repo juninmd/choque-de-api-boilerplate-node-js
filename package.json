@@ -20,9 +20,11 @@
   },
   "scripts": {
     "tsc": "node_modules/.bin/tsc",
+    "tsc:clean": "rd dist -r",
     "tsc:w": "node_modules/.bin/tsc -w",
-    "dev": "./node_modules/.bin/nodemon \"./dist/app.js\"",
+    "dev": "./node_modules/.bin/nodemon \"./dist/src/app.js\"",
     "devm": "concurrently \"npm run tsc:w\" \"npm run dev\"",
+    "test": "jest -i --forceExit",
     "lint": "tslint 'src/**/*.ts'",
     "fix": "npm run lint -- --fix"
   },
@@ -35,15 +37,25 @@
     "husky": "^0.14.3",
     "jest": "^22.4.3",
     "nodemon": "^1.17.2",
-    "ts-node": "^5.0.1",
+    "supertest": "^3.0.0",
+    "ts-jest": "^22.4.2",
     "tslint": "^5.9.1",
     "typescript": "^2.7.2"
   },
   "jest": {
+    "globals": {
+      "__TS_CONFIG__": "tsconfig.json"
+    },
     "moduleFileExtensions": [
       "ts",
-      "tsx",
       "js"
-    ]
+    ],
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/test/**/*.test.(ts)"
+    ],
+    "testEnvironment": "node"
   }
 }

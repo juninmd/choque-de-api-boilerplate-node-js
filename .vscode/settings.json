@@ -16,7 +16,6 @@
         "tsconfig.json" : true,
         "tslint.json" : true,
         "nodemon.json" : true,
-        "TODO" : true,
         "yarn.lock" : true
     }
 }

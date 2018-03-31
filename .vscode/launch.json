@@ -7,12 +7,24 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Jest Tests",
+      "program": "${workspaceRoot}\\node_modules\\jest\\bin\\jest.js",
+      "args": [
+        "-i",
+        "--forceExit"
+      ],
+      "sourceMaps": false,
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}\\dist\\app.js",
+      "program": "${workspaceFolder}\\dist\\src\\app.js",
       "preLaunchTask": "tsc",
       "outFiles": [
-        "${workspaceFolder}\\dist\\**\\*.js",
-        "${workspaceFolder}\\dist\\**\\**\\*.js"
+        "${workspaceFolder}\\dist\\src\\**\\*.js",
+        "${workspaceFolder}\\dist\\src\\**\\**\\*.js"
       ],
       "env": {
         "NODE_ENV": "development"
