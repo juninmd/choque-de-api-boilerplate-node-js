@@ -7,15 +7,16 @@
         "**/.DS_Store": true,
         "dist": true,
         "node_modules": true,
-        "yarn-lock.json": true,
         "package-lock.json": true,
         ".vscode": true,
-        ".eslintrc" : true,
+        ".eslintrc": true,
         ".editorconfig": true,
-        ".gitignore" : true,
-        "tsconfig.json" : true,
-        "tslint.json" : true,
-        "nodemon.json" : true,
-        "yarn.lock" : true
+        ".gitignore": true,
+        "tsconfig.json": true,
+        "tslint.json": true,
+        "nodemon.json": true,
+        "yarn.lock": true,
+        "Procfile": true,
+        "yarn-error.log": true
     }
 }

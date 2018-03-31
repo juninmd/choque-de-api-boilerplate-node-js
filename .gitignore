@@ -96,7 +96,4 @@ $RECYCLE.BIN/
 # typescript
 dist
 
-.env-development
-.env-staging
-.env-production
-.env-test
+env/.*
