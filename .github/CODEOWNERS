@@ -1,0 +1,5 @@
+# These owners will be the default owners for everything in the repo.
+# This format may be familiar if you've used https://git-scm.com/docs/gitattributes.
+# Enable Codeowners https://github.com/blog/2392-introducing-code-owners
+
+*       
