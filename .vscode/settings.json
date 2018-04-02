@@ -17,6 +17,7 @@
         "nodemon.json": true,
         "yarn.lock": true,
         "Procfile": true,
-        "yarn-error.log": true
+        "yarn-error.log": true,
+        ".github": true
     }
 }
