@@ -1,20 +1,21 @@
 import { JsonController, Get } from 'routing-controllers';
 import sequelize from "../databases/mysql.database";
+
 @JsonController()
 export class ApiController {
 
     @Get()
     geta() {
-        return { data: 'goku' };
+        return { data: 'Olá amantes da sétima arte!' };
     }
 
     @Get('/db')
     async database() {
         try {
             await sequelize.authenticate();
-            return { data: 'goku' };
+            return { data: 'Só magia TOP Rogerinho' };
         } catch (error) {
-            return { data: 'freeza' };
+            return { error: 'É Golpe!' };
         }
     }
 

@@ -1,36 +1,36 @@
-# Choque de API 
-## Boilerplate Node JS + Typescript
 
-![errado](https://i.imgur.com/GBJl466.jpg)
 
-## Achou que não ia ter cultura ao desenvolver APIS com Node JS?
+<p align="center">
+Achou que não teria um `boilerplate` legal pra você? <br>
 
-```
-               _                                           _       
-     /\       | |                                         | |      
-    /  \   ___| |__   ___  _   _    ___ _ __ _ __ __ _  __| | ___  
-   / /\ \ / __| '_ \ / _ \| | | |  / _ | '__| '__/ _` |/ _` |/ _ \ 
-  / ____ | (__| | | | (_) | |_| | |  __| |  | | | (_| | (_| | (_) |
- /_/    \_\___|_| |_|\___/ \__,_|  \___|_|  |_|  \__,_|\__,_|\___/ 
-                                                                   
+  <img src="https://i.imgur.com/GBJl466.jpg" alt="w3tec" width="200" />
+  <br>
+ACHOU ERRADO OTÁRIO!
+</p>
 
-   ____  _    __       _       
-  / __ \| |  /_/      (_)      
- | |  | | |_ __ _ _ __ _  ___  
- | |  | | __/ _` | '__| |/ _ \ 
- | |__| | || (_| | |  | | (_) |
-  \____/ \__\__,_|_|  |_|\___/ 
-```
-![errado](https://i.imgur.com/6dzSIMl.jpg)
+# Choque de Cultura - Boilerplate
+
+<p align="center">
+  <b>Boilerplate para amantes da sétima arte da programação.</b></br>
+  <sub>Feito com carinho ❤️ por <a href="https://github.com/juninmd">juninmd</a></a></sub>
+</p>
+
+## Sumário
+* Resumo
+* Tecnologias
+* Preparando o ambiente
+* Dedicação
+* Tasks
+
+## Tecnologias 
+``` Boilerplate Express + Typescript + JEST + Sentry + Helmet + TSLinter + Sequelize + Annotations + Nodemon + Procfile + express-status-monitor ```
+
 ## Dedicação
-* Especialmente aos amantes da sétima arte do desenvolvimento de software  
+* Especialmente aos amantes da sétima arte
 
-Em breve a documentação verdadeira e todo código fonte....
-
-## Configurações prontas
+## Preparando o Ambiente
 * Visual Studio Code
 
-## Como testar?
 > yarn
 * Vai baixar todas a dependências do projeto.
 * Depois é só dar F5 no Visual Studio Code.
