@@ -16,32 +16,47 @@ ACHOU ERRADO OTÁRIO!
 </p>
 
 ## Sumário
-* Resumo
-* Tecnologias
-* Preparando o ambiente
-* Dedicação
-* Tasks
+* [Resumo](#o-que-é-essa-api)
+* [Tecnologias](#o-que-é-essa-api)
+* [Preparando o ambiente](#o-que-é-essa-api)
+* [Dedicação](#o-que-é-essa-api)
+* [Tasks](#o-que-é-essa-api)
 
 ## Tecnologias 
-``` Boilerplate Express + Typescript + JEST + Sentry + Helmet + TSLinter + Sequelize + Annotations + Nodemon + Procfile + express-status-monitor ```
+* [Express](#o-que-é-essa-api)
+* [Typescript](#o-que-é-essa-api)
+* [Jest](#o-que-é-essa-api)
+* [Sentry](#o-que-é-essa-api)
+* [Helmet](#o-que-é-essa-api)
+* [TSLinter](#o-que-é-essa-api)
+* [Sequelize](#o-que-é-essa-api)
+* [Annotations](#o-que-é-essa-api)
+* [Nodemon](#o-que-é-essa-api)
+* [Procfile](#o-que-é-essa-api)
+* [Status Monitor](#o-que-é-essa-api)
 
 ## Dedicação
 * Especialmente aos amantes da sétima arte
 
 ## Preparando o Ambiente
-* Visual Studio Code
-
-> yarn
-* Vai baixar todas a dependências do projeto.
+* Tenha instalado o [Visual Studio Code](https://code.visualstudio.com/)
+* Baixe o yarn
+  * Ele Vai baixar todas a dependências do projeto.
+* Instale o MySql
+* Configure as variáveis de ambiente dentro da pasta /env
 * Depois é só dar F5 no Visual Studio Code.
   
-## NPM Tasks
-* tsc:clean   
-`Remove a pasta dist gerada pelo Typescript`
+## Scripts NPM
+| Comando      | Descrição          |  
+| ------------- |:-------------:| 
+| tsc:clean     | Remove a pasta dist gerada pelo Typescript   | 
+| tsc    | Efetua o build do typescript      | 
 
-* tsc  
-`Efetua o build do typescript`
 
+## Rotas default
+| Comando      | Descrição          |  
+| ------------- |:-------------:| 
+| http://localhost:4500/status    | Exibe status da aplicação, requests, memória, cpu   | 
 
-## Status
-`http://localhost:4500/status`
+## Créditos
+https://github.com/w3tecch/express-typescript-boilerplate

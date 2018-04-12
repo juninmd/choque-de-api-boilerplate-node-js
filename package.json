@@ -30,7 +30,9 @@
     "test": "jest -i --forceExit",
     "lint": "tslint 'src/**/*.ts'",
     "fix": "npm run lint -- --fix",
-    "postinstall": ".\\README.md"
+    "postinstall": ".\\README.md",
+    "precommit": "npm test",
+    "prepush": "npm test"
   },
   "devDependencies": {
     "@types/body-parser": "^1.16.8",
