@@ -1,10 +1,18 @@
+import * as fs from 'fs';
 import * as path from 'path';
+import * as _ from 'lodash';
+
+const envName = (process.env.NODE_ENV || 'test');
+const missingTags: Array<string> = [];
 
 function env(tag, value = '') {
+    if (_.isEmpty(process.env[tag]) && _.isEmpty(value)) {
+        missingTags.push(tag)
+    }
     return (process.env[tag] || value);
 }
 
-export default {
+const settings = {
     api: {
         port: Number(env('PORT', '3000')),
         env: env('NODE_ENV', 'development'),
@@ -25,3 +33,16 @@ export default {
         sentryToken: env('SENTRY_TOKEN')
     }
 }
+
+if (missingTags.length > 0) {
+    console.error(`[API] check the env/${envName}.env file contains all attributes and values`)
+    console.error(`[API] Missing:`)
+
+    for (let tag of missingTags) {
+        console.error(tag);
+    }
+
+    process.exit(0);
+}
+
+export default settings;

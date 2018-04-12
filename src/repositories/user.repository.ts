@@ -5,12 +5,11 @@ export default class UserRepository {
     constructor() {
     }
 
-    insert() {
-        const person = new UserModel({ email: '1@1.com', password: 'aaaaa' });
-        return person.save();
+    save() {
+        return new UserModel({ email: '1@1.com', password: 'aaaaa' }).save();
     }
 
-    get() {
+    findOne() {
         return UserModel.findOne()
     }
 

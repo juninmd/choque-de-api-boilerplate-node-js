@@ -16,11 +16,11 @@ ACHOU ERRADO OTÁRIO!
 </p>
 
 ## Sumário
-* [Resumo](#o-que-é-essa-api)
-* [Tecnologias](#o-que-é-essa-api)
-* [Preparando o ambiente](#o-que-é-essa-api)
-* [Dedicação](#o-que-é-essa-api)
-* [Tasks](#o-que-é-essa-api)
+* [Resumo](#resumo)
+* [Tecnologias](#tecnologias)
+* [Preparando o ambiente](#preparando-o-ambiente)
+* [Dedicação](#dedicação)
+* [Tasks](#scripts-npm)
 
 ## Tecnologias 
 * [Express](#o-que-é-essa-api)
@@ -34,6 +34,15 @@ ACHOU ERRADO OTÁRIO!
 * [Nodemon](#o-que-é-essa-api)
 * [Procfile](#o-que-é-essa-api)
 * [Status Monitor](#o-que-é-essa-api)
+
+## Resumo
+* Este boilerplate reune um pack de frameworks e libs, provendo uma estrutura organizada, pronta para ser utilizada.  
+
+## Tecnologias
+| Nome      | Descrição          |  
+| ------------- |:-------------:| 
+| Typescript    | Superset javascript     | 
+| Express    | Framework http super rápido      | 
 
 ## Dedicação
 * Especialmente aos amantes da sétima arte
@@ -56,7 +65,9 @@ ACHOU ERRADO OTÁRIO!
 ## Rotas default
 | Comando      | Descrição          |  
 | ------------- |:-------------:| 
-| http://localhost:4500/status    | Exibe status da aplicação, requests, memória, cpu   | 
+| http://localhost:4500/api/    | Recebe uma resposta da aplicação   | 
+| http://localhost:4500/api/db    | Recebe uma resposta da aplicação verificando acesso ao banco   | 
+| http://localhost:4500/api/status    | Exibe status da aplicação, requests, memória, cpu   | 
 
 ## Créditos
 https://github.com/w3tecch/express-typescript-boilerplate

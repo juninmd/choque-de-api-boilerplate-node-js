@@ -8,7 +8,7 @@ export class SentryErrorMiddleware implements ExpressMiddlewareInterface {
     public use(req: express.Request, res: express.Response, next: express.NextFunction): any {
         return status({
             title: 'Express Status',
-            path: '/status',
+            path: '/api/status',
             spans: [{
                 interval: 1,
                 retention: 60

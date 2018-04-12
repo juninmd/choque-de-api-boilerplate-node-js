@@ -20,12 +20,11 @@ export class HomeController {
 
     @Get('/users/:id')
     getOne(@Param('id') id: number) {
-        return new UserRepository().get();
+        return new UserRepository().findOne();
     }
 
     @Post('/users')
     async post() {
-        let insert = await new UserRepository().insert();
-        return insert;
+        return await new UserRepository().save();
     }
 }
